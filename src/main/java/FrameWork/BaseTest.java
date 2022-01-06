@@ -25,6 +25,6 @@ public class BaseTest extends DriverManager {
 
     @AfterEach
     public void tearDown() {
-        getDriver().get(url);
+        quitDriver();
     }
 }

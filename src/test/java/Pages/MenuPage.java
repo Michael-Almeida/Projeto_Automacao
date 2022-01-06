@@ -22,8 +22,13 @@ public class MenuPage {
         return driver.findElement(By.xpath(" //div[@class='col s3']/ul/li/div[@class='collapsible-body']/ul/li/a[@href='/users/new']"));
     }
 
-    public WebElement getTextTitle(){
+    public WebElement getTextTitle() {
 
-        return  driver.findElement(By.xpath("//div[@class='col s3']/h4"));
+        return driver.findElement(By.xpath("//div[@class='col s3']/h4"));
+    }
+
+    public WebElement getCriarUsuarioLink() {
+
+        return driver.findElement(By.xpath("//div[@class='col s3']/ul/li/div[@class='collapsible-body']/ul/li/a[@href='/users/new']"));
     }
 }
