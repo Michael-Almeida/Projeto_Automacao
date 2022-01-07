@@ -13,11 +13,11 @@ public class FormularioPage {
     }
 
     public WebElement getName() {
-        return driver.findElement(By.xpath(""));
+        return this.driver.findElement(By.id("user_name"));
     }
 
     public WebElement getLastName() {
-        return driver.findElement(By.xpath("//div[@class='row']/div[@class='col s9']/div[@class='row']/div[@class='col s8 center']/form[@id='new_user']/div[@class='row']/div[@class='col s6']/div[@class='input-field']/input[@id='user_lastname']"));
+        return this.driver.findElement(By.id("user_lastname"));
     }
 
     public WebElement getEmailTextField() {

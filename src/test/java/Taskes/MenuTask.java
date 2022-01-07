@@ -15,7 +15,7 @@ public class MenuTask {
 
         this.driver= driver;
         menuPage = new MenuPage(this.driver);
-        waits = new Waits(this.driver)
+        waits = new Waits(this.driver);
     }
 
     public void acessarFormularios(){

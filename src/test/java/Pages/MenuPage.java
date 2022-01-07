@@ -14,12 +14,12 @@ public class MenuPage {
 
     public WebElement getFormLink() {
 
-        return driver.findElement(By.xpath("//div[@class='col s3']/ul/li/a[@class='collapsible-header']"));
+        return driver.findElement(By.xpath("div[@class='col s3']/ul[@class='collapsible collapsible-accordion']/li/a[@class='collapsible-header ']"));
     }
 
-    public WebElement getUsuarioLink() {
+    public WebElement getCriarUsuarioLink() {
 
-        return driver.findElement(By.xpath(" //div[@class='col s3']/ul/li/div[@class='collapsible-body']/ul/li/a[@href='/users/new']"));
+        return driver.findElement(By.xpath("//div[@class='col s3']/ul[@class='collapsible collapsible-accordion']/li[@class='bold active']/div[@class='collapsible-body']/ul/li/a[@href='/users/new']"));
     }
 
     public WebElement getTextTitle() {
@@ -27,8 +27,5 @@ public class MenuPage {
         return driver.findElement(By.xpath("//div[@class='col s3']/h4"));
     }
 
-    public WebElement getCriarUsuarioLink() {
 
-        return driver.findElement(By.xpath("//div[@class='col s3']/ul/li/div[@class='collapsible-body']/ul/li/a[@href='/users/new']"));
-    }
 }
